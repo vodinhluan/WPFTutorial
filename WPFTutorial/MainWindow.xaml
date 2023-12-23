@@ -5,27 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFTutorial"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="NoteSomeThing" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
 
-        <Rectangle Grid.Row="0" Grid.Column="0" Fill="RED"></Rectangle>
-        <Rectangle Grid.Row="0" Grid.Column="1" Fill="BLUE"></Rectangle>
-        <Rectangle Grid.Row="0" Grid.Column="2" Fill="RED"></Rectangle>
-        <Rectangle Grid.Row="1" Grid.Column="0" Fill="BLUE"></Rectangle>
-        <Rectangle Grid.Row="1" Grid.Column="1" Fill="RED"></Rectangle>
-        <Rectangle Grid.Row="1" Grid.Column="2" Fill="BLUE"></Rectangle>
-        <Rectangle Grid.Row="2" Grid.Column="0" Fill="RED"></Rectangle>
-        <Rectangle Grid.Row="2" Grid.Column="1" Fill="BLUE"></Rectangle>
-        <Rectangle Grid.Row="2" Grid.Column="2" Fill="RED"></Rectangle>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Menu>
+                <MenuItem Header="File" FontSize="16">
+                    <MenuItem Header="New" FontSize="15"></MenuItem>
+                    <MenuItem Header="Save" FontSize="15"></MenuItem>
+
+                </MenuItem>
+                <MenuItem Header="Edit" FontSize="16">
+                    <MenuItem Header="Format" FontSize="15"></MenuItem>
+                </MenuItem>
+            </Menu>
+        </Grid>
     </Grid>
 </Window>
