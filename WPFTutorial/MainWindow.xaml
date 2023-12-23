@@ -6,10 +6,26 @@
         xmlns:local="clr-namespace:WPFTutorial"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="AntiqueWhite">
-        <TextBlock Name="tbTitle" Text="FIFA ONLINE" FontFamily="Times New Roman" FontSize="75" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,54,0,0"/>
-        <Button Name="btnStart" Content="START" Background="PaleVioletRed" 
-                FontSize="50" HorizontalAlignment="Center"  VerticalAlignment="Top" Margin="0,268,0,0" 
-                RenderTransformOrigin="0.524,-0.128" Click="btnStart_Click" />
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Rectangle Grid.Row="0" Grid.Column="0" Fill="RED"></Rectangle>
+        <Rectangle Grid.Row="0" Grid.Column="1" Fill="BLUE"></Rectangle>
+        <Rectangle Grid.Row="0" Grid.Column="2" Fill="RED"></Rectangle>
+        <Rectangle Grid.Row="1" Grid.Column="0" Fill="BLUE"></Rectangle>
+        <Rectangle Grid.Row="1" Grid.Column="1" Fill="RED"></Rectangle>
+        <Rectangle Grid.Row="1" Grid.Column="2" Fill="BLUE"></Rectangle>
+        <Rectangle Grid.Row="2" Grid.Column="0" Fill="RED"></Rectangle>
+        <Rectangle Grid.Row="2" Grid.Column="1" Fill="BLUE"></Rectangle>
+        <Rectangle Grid.Row="2" Grid.Column="2" Fill="RED"></Rectangle>
     </Grid>
 </Window>

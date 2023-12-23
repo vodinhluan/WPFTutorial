@@ -27,23 +27,7 @@ namespace WPFTutorial
            
         }
 
-        private void btnStart_Click(object sender, RoutedEventArgs e)
-        {
-            if (running)
-            {
-                // stop
-                tbTitle.Text = "FIFA ONLINE";
-                btnStart.Content = "START";
-
-            } else
-            {
-                // run
-                tbTitle.Text = "WELCOME";
-                btnStart.Content = "BACK";
-            }
-            
-            running = !running;
-        }
+        
     }
 
     
